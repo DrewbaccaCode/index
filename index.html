@@ -43,52 +43,8 @@
 </nav>
 
     <marquee><h1> Hello World! </h1></marquee>
-    <center><img src="house.png" alt="house"></center>
-
-    <canvas id="starfieldCanvas" width="1365" height="969"></canvas>
-
-    <script>
-        (function() {
-            var
-                // Obtain a reference to the canvas element
-                // using its id.
-                htmlCanvas = document.getElementById('starfieldCanvas'),
-
-                // Obtain a graphics context on the
-                // canvas element for drawing.
-                context = htmlCanvas.getContext('2d');
-
-            // Start listening to resize events and
-            // draw canvas.
-            initialize();
-
-            function initialize() {
-                // Register an event listener to
-                // call the resizeCanvas() function each time
-                // the window is resized.
-                window.addEventListener('resize', resizeCanvas, false);
-
-                // Draw canvas border for the first time.
-                resizeCanvas();
-            }
-
-            // Display custom canvas.
-            // In this case it's a blue, 5 pixel border that
-            // resizes along with the browser window.
-            function redraw() {}
-
-            // Runs each time the DOM window resize event fires.
-            // Resets the canvas dimensions to match window,
-            // then draws the new borders accordingly.
-            function resizeCanvas() {
-                htmlCanvas.width = window.innerWidth;
-                htmlCanvas.height = window.innerHeight;
-                redraw();
-            }
-
-        })();
-    </script>
-
+    <marquee><img src="house.png" alt="house"></marquee>
+    
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://unpkg.com/popper.js@1.12.6/dist/umd/popper.js" integrity="sha384-fA23ZRQ3G/J53mElWqVJEGJzU0sTs+SvzG8fXVWP+kJQ1lwFAOkcUOysnlKJC33U" crossorigin="anonymous"></script>
     <script src="https://unpkg.com/bootstrap-material-design@4.1.1/dist/js/bootstrap-material-design.js" integrity="sha384-CauSuKpEqAFajSpkdjv3z9t8E7RlpJ1UP0lKM/+NdtSarroVKu069AlsRPKkFBz9" crossorigin="anonymous"></script>
